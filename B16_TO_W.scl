@@ -1,6 +1,6 @@
 ﻿FUNCTION_BLOCK "B16_TO_W"
 { S7_Optimized_Access := 'TRUE' }
-VERSION : 0.3
+VERSION : 0.4
    VAR_INPUT 
       B_0 : Bool;
       B_1 : Bool;
