@@ -52,6 +52,8 @@
   <Section Name="Temp">
     <Member Name="Out_norm" Datatype="Real" />
     <Member Name="Out_Scaled" Datatype="Real" />
+    <Member Name="Dummy1" Datatype="Bool" />
+    <Member Name="Dummy2" Datatype="Bool" />
   </Section>
   <Section Name="Constant" />
   <Section Name="Return">
@@ -110,6 +112,69 @@
         </ObjectList>
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="Dummy1" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="THEN" UId="27" />
+  <NewLine Num="1" UId="28" />
+  <Blank Num="4" UId="29" />
+  <Access Scope="LocalVariable" UId="30">
+    <Symbol UId="31">
+      <Component Name="Dummy2" UId="32" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="33" />
+  <Token Text=":=" UId="34" />
+  <Blank Num="1" UId="35" />
+  <Access Scope="LiteralConstant" UId="36">
+    <Constant UId="37">
+      <ConstantValue UId="39">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="40" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="41">
+    <Text UId="42"> Statement section IF</Text>
+  </LineComment>
+  <NewLine Num="1" UId="43" />
+  <Blank Num="4" UId="44" />
+  <NewLine Num="1" UId="45" />
+  <Token Text="END_IF" UId="46" />
+  <Token Text=";" UId="47" />
+  <NewLine Num="1" UId="48" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
@@ -208,9 +273,9 @@
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
-          <MultilingualText ID="9" CompositionName="Comment">
+          <MultilingualText ID="E" CompositionName="Comment">
             <ObjectList>
-              <MultilingualTextItem ID="A" CompositionName="Items">
+              <MultilingualTextItem ID="F" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
                   <Text />
@@ -218,9 +283,9 @@
               </MultilingualTextItem>
             </ObjectList>
           </MultilingualText>
-          <MultilingualText ID="B" CompositionName="Title">
+          <MultilingualText ID="10" CompositionName="Title">
             <ObjectList>
-              <MultilingualTextItem ID="C" CompositionName="Items">
+              <MultilingualTextItem ID="11" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
                   <Text>HPU Proportional Valve: Normalize &amp; Scaling of Input Feedback [+/-10V]</Text>
@@ -230,7 +295,7 @@
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
@@ -285,9 +350,9 @@
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
-          <MultilingualText ID="E" CompositionName="Comment">
+          <MultilingualText ID="13" CompositionName="Comment">
             <ObjectList>
-              <MultilingualTextItem ID="F" CompositionName="Items">
+              <MultilingualTextItem ID="14" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
                   <Text />
@@ -295,9 +360,9 @@
               </MultilingualTextItem>
             </ObjectList>
           </MultilingualText>
-          <MultilingualText ID="10" CompositionName="Title">
+          <MultilingualText ID="15" CompositionName="Title">
             <ObjectList>
-              <MultilingualTextItem ID="11" CompositionName="Items">
+              <MultilingualTextItem ID="16" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
                   <Text>Out of Range</Text>
@@ -307,7 +372,7 @@
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
@@ -343,34 +408,6 @@
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
-          <MultilingualText ID="13" CompositionName="Comment">
-            <ObjectList>
-              <MultilingualTextItem ID="14" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-          <MultilingualText ID="15" CompositionName="Title">
-            <ObjectList>
-              <MultilingualTextItem ID="16" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-        </ObjectList>
-      </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
-        <AttributeList>
-          <NetworkSource />
-          <ProgrammingLanguage>FBD</ProgrammingLanguage>
-        </AttributeList>
-        <ObjectList>
           <MultilingualText ID="18" CompositionName="Comment">
             <ObjectList>
               <MultilingualTextItem ID="19" CompositionName="Items">
@@ -393,9 +430,37 @@
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <MultilingualText ID="1C" CompositionName="Title">
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
         <ObjectList>
-          <MultilingualTextItem ID="1D" CompositionName="Items">
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="21" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="22" CompositionName="Items">
             <AttributeList>
               <Culture>en-US</Culture>
               <Text>Analog Scaling of an Input</Text>
