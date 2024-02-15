@@ -10,7 +10,7 @@
       <HeaderVersion>0.1</HeaderVersion>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Input">
-    <Member Name="IN_Int" Datatype="Int" Accessibility="Public">
+    <Member Name="IN_Int" Datatype="DInt" Accessibility="Public">
       <Comment>
         <MultiLanguageText Lang="en-US">Sensor Input Val usually PIWxxx</MultiLanguageText>
       </Comment>
